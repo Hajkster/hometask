@@ -1,0 +1,16 @@
+{
+  "name": "hometask-project-set-up",
+  "version": "1.0.0",
+  "description": "This is my first project",
+  "main": "index.js",
+  "repository": "https://github.com/Hajkster/hometask.git",
+  "author": "PiotrTunski",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+    "scripts": {
+    "test": "jest"
+  }
+  
+}
