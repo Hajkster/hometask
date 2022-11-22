@@ -15,8 +15,9 @@ test ('should properly count rectangle Area', () => {
 
 test ('should generate a valid info about rectangle Perimeter and the Area', () => {
     var perimeter = rectangle.getRectanglePerimeter(length,width);
-    var area = rectangle.getRectangleArea(length,width);
-    var rectangleInfo = rectangle.getRectangleInfo(length,width);
+    var area = rectangle.getRectangleArea(length,width);  
     var expectedRectangleInfo ='The perimeter of a rectangle is ' + perimeter + ' and the area is ' + area;
-    expect(rectangleInfo).toBe(expectedRectangleInfo);
-    });
+    console.log = jest.fn();
+    rectangle.getRectangleInfo(length,width);
+    expect(console.log).toHaveBeenCalledWith(expectedRectangleInfo);
+});
